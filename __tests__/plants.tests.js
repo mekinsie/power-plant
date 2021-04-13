@@ -27,29 +27,28 @@ describe('changeState', () => {
   });
   test('it should increase light by 5', () => {
     let plant = {}
-    expect(sunlight(plant)).toEqual({ light: 5 })
+    expect(sunlight(plant)).toEqual({ light: 5 });
   });
   test('it should increase health by 1', () => {
     let plant = {}
     expect(massage(plant)).toEqual({ health: 1 });
-  })
+  });
 
   test('it should increase health by 5', () => {
     let plant = {}
     expect(playMusic(plant)).toEqual({ health: 5 });
-  })
+  });
 });
 
 describe('stateControl', () => {
 
   test('should return an empty object when no argument is passed in', () => {
-    expect(stateControl()).toEqual({})
+    expect(stateControl()).toEqual({});
   });
   
   test('should change the state when passsing in a changestate function', () => {
-    const randomPlant = stateControl(blueFood)
-    const randomPlantThatHasBeenMassaged = stateControl(massage)
+    const randomPlant = stateControl(blueFood);
+    const randomPlantThatHasBeenMassaged = stateControl(massage);
     expect(randomPlantThatHasBeenMassaged).toEqual({soil: 5, health: 1});
   });
-
 });
