@@ -11,6 +11,10 @@ describe('changeState', () => {
     let plant = {};
     expect(feed(plant)).toEqual({ soil: 1 });
   });
+  test('it should increase soil by 5', () => {
+    let plant = {};
+    expect(blueFood(plant)).toEqual({ soil: 5 });
+  });
 
 
 // describe('stateControl', () => {
