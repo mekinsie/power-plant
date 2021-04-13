@@ -32,5 +32,6 @@ const blueFood = changeState("soil")(5);
 const hydrate = changeState("water")(1);
 const superWater = changeState("water")(5);
 
+const artificialLight = changeState("light")(1);
 
-module.exports = { stateControl, changeState, feed, blueFood, hydrate, superWater};
+module.exports = { stateControl, changeState, feed, blueFood, hydrate, superWater, artificialLight };

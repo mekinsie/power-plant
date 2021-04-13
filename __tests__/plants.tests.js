@@ -1,5 +1,4 @@
-const { stateControl, changeState, feed, blueFood, hydrate, superWater} = require('./../src/plants.js');
-
+const { stateControl, changeState, feed, blueFood, hydrate, superWater, artificialLight} = require('./../src/plants.js');
 
 describe('changeState', () => {
   test('should increase property value', () => {
@@ -21,6 +20,10 @@ describe('changeState', () => {
   test('it should increase water by 5', () => {
     let plant = {};
     expect(superWater(plant)).toEqual({ water: 5 });
+  });
+  test('it should increase light by 1', () => {
+    let plant = {};
+    expect(artificialLight(plant)).toEqual({ light: 1 });
   });
 
 
