@@ -48,7 +48,8 @@ describe('stateControl', () => {
   
   test('should change the state when passsing in a changestate function', () => {
     const randomPlant = stateControl(blueFood)
-    expect(randomPlant).toEqual({soil: 5});
+    const randomPlantThatHasBeenMassaged = stateControl(massage)
+    expect(randomPlantThatHasBeenMassaged).toEqual({soil: 5, health: 1});
   });
 
 });
