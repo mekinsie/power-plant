@@ -3,7 +3,7 @@
 // This function stores our state.
 
 const storeState = () => {
-  let currentState = {};
+  const currentState = {};
   return (stateChangeFunction = state => state) => {
     const newState = stateChangeFunction(currentState);
     currentState = {...newState};
@@ -33,5 +33,6 @@ const hydrate = changeState("water")(1);
 const superWater = changeState("water")(5);
 
 const artificialLight = changeState("light")(1);
+const sunLight = changeState("light")(5);
 
-module.exports = { stateControl, changeState, feed, blueFood, hydrate, superWater, artificialLight };
+module.exports = { stateControl, changeState, feed, blueFood, hydrate, superWater, artificialLight, sunLight };
