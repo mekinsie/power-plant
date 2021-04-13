@@ -38,15 +38,19 @@ describe('changeState', () => {
     let plant = {}
     expect(playMusic(plant)).toEqual({ health: 5 });
   })
+});
 
-// describe('stateControl', () => {
+describe('stateControl', () => {
 
-//   test('should change the state when passsing in a changestate function', () => {
-//     expect().toEqual();
-//   });
-
-//   test('should return current state when no argument is passed in', () => {
-//     expect().toEqual();
-//   });
+  test('should return current state when no argument is passed in', () => {
+    expect(stateControl()).toEqual({})
+  });
+  
+  
+  // test('should change the state when passsing in a changestate function', () => {
+    //   expect().toEqual();
+    // const fedPlant = stateControl(blueFood)
+    // expect(fedPlant.soil).toEqual(5);
+  // });
 
 });
