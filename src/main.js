@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import { stateControl, changeState, feed, blueFood, hydrate, superWater} from './plants.js';
+// import { stateControl, changeState, feed, blueFood, hydrate, superWater} from './plants.js';
 
 $(document).ready(function() {
 

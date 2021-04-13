@@ -1,5 +1,4 @@
 
-module.exports = { stateControl, changeState, feed, blueFood, hydrate, superWater};
 
 // This function stores our state.
 
@@ -9,8 +8,8 @@ const storeState = () => {
     const newState = stateChangeFunction(currentState);
     currentState = {...newState};
     return newState;
-  }
-}
+  };
+};
 
 const stateControl = storeState();
 
@@ -21,9 +20,9 @@ const changeState = (prop) => {
     return (state) => ({
       ...state,
       [prop] : (state[prop] || 0) + value
-    })
-  }
-}
+    });
+  };
+};
 
 // We create four functions using our function factory. We could easily create many more.
 
@@ -33,3 +32,5 @@ const blueFood = changeState("soil")(5);
 const hydrate = changeState("water")(1);
 const superWater = changeState("water")(5);
 
+
+module.exports = { stateControl, changeState, feed, blueFood, hydrate, superWater};

@@ -1,7 +1,7 @@
 {
   "name": "template",
   "version": "1.0.0",
-  "description": "",
+  "description": "#### (Brief Description of Application)",
   "main": "main.js",
   "eslintConfig": {
     "plugins": [
@@ -40,5 +40,13 @@
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeroenemo/js-dev-env-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jeroenemo/js-dev-env-template/issues"
+  },
+  "homepage": "https://github.com/Jeroenemo/js-dev-env-template#readme"
 }
