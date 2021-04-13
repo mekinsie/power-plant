@@ -33,6 +33,6 @@ const hydrate = changeState("water")(1);
 const superWater = changeState("water")(5);
 
 const artificialLight = changeState("light")(1);
-const sunLight = changeState("light")(5);
+const sunlight = changeState("light")(5);
 
-module.exports = { stateControl, changeState, feed, blueFood, hydrate, superWater, artificialLight, sunLight };
+module.exports = { stateControl, changeState, feed, blueFood, hydrate, superWater, artificialLight, sunlight };
