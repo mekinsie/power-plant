@@ -5,6 +5,11 @@ describe('changeState', () => {
   test('should increase property value', () => {
     let plant = {};
     expect(changeState("soil")(5)(plant)).toEqual({ soil: 5 });
+
+  });
+  test('it should feed the plant by increasing its soil by 1', () => {
+    let plant = {};
+    expect(feed(plant)).toEqual({ soil: 1 });
   });
 
 
