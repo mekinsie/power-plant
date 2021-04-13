@@ -37,6 +37,5 @@ const sunlight = changeState("light")(5);
 
 const playMusic = changeState("health")(5)
 const massage = changeState("health")(1)
-const cleanLeaves = changeState("health")(2)
 
-module.exports = { stateControl, changeState, feed, blueFood, hydrate, superWater, artificialLight, sunlight, playMusic };
+module.exports = { stateControl, changeState, feed, blueFood, hydrate, superWater, artificialLight, sunlight, playMusic, massage };
