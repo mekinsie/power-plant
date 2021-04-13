@@ -42,15 +42,13 @@ describe('changeState', () => {
 
 describe('stateControl', () => {
 
-  test('should return current state when no argument is passed in', () => {
+  test('should return an empty object when no argument is passed in', () => {
     expect(stateControl()).toEqual({})
   });
   
-  
-  // test('should change the state when passsing in a changestate function', () => {
-    //   expect().toEqual();
-    // const fedPlant = stateControl(blueFood)
-    // expect(fedPlant.soil).toEqual(5);
-  // });
+  test('should change the state when passsing in a changestate function', () => {
+    const randomPlant = stateControl(blueFood)
+    expect(randomPlant).toEqual({soil: 5});
+  });
 
 });
