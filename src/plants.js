@@ -1,7 +1,4 @@
-
-
 // This function stores our state.
-
 const storeState = () => {
   let currentState = {};
   return (stateChangeFunction = state => state) => {
@@ -12,8 +9,8 @@ const storeState = () => {
 };
 
 const stateControl = storeState();
-// const plant1 = storeState();
-// const plant2 = storeState();
+const plant1 = storeState();
+const plant2 = storeState();
 
 // This is a function factory. We can easily create more specific functions that alter a plant's soil, water, and light to varying degrees.
 
@@ -40,4 +37,6 @@ const sunlight = changeState("light")(5);
 const playMusic = changeState("health")(5);
 const massage = changeState("health")(1);
 
-module.exports = { stateControl, changeState, feed, blueFood, hydrate, superWater, artificialLight, sunlight, playMusic, massage };
+define(function (require, exports, module) {
+  module.exports = { stateControl, changeState, feed, blueFood, hydrate, superWater, artificialLight, sunlight, playMusic, massage, plant1, plant2 }
+});
