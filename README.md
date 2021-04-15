@@ -1,31 +1,17 @@
-# (Application Name)
+# Power Plant
 
-#### (Brief Description of Application)
+## Authors: **Mekinsie Callahan, Jeroen van Seeters, Jo Miller**
 
-#### By (Your Name Here)
+### _This project was created solely for the education of the author(s) and is not in a complete or portfolio-ready state. It should not be considered representative of professional work._
+
+This application utilizes functional programming with JavaScript. Specifically, users can grow plants by clicking on different buttons such was "water" or "feed". 
 
 ## Technologies Used
-
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
-
-## Description
-
-## Setup/Installation Requirements
-
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-## Known Bugs
-
-* _Any known issues_
-* _should go here_
+* JavaScript
+* jQuery
+* HTML
+* npm
 
 ## License
-
-## Contact Information
+[GPLv3](https://choosealicense.com/licenses/gpl-3.0/)\
+Copyright &copy; 2021 Mekinsie Callahan, Jeroen van Seeters, Jo Miller
